@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>House Data</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Loved+by+the+King&display=swap" rel="stylesheet">
+
+</head>
+
+<body
+    style="background-image: url(https://venngage-wordpress.s3.amazonaws.com/uploads/2018/09/Minimalist-Crumpled-Paper-Simple-Background-Image.jpg);">
+
+
+    <div class=header>
+        <div class=innerHeader1><img class="logo" src="./pixs/TGIF_logo.png" alt="logo" /> </div>
+        <div> </div>
+        <div class=innerHeader2>
+            <a class=eMail href="info@tgif.com">info@tgif.com</a>
+            <img class="emailPic" src="./pixs/email_pic.png" alt="email" />
+        </div>
+    </div>
+
+
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="home.html">Home<span class="sr-only">(current)</span></a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Congress 113
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#"><a href="senate-data.html">Senate</a></a>
+                        <a class="dropdown-item" href="#"><a href="house-data.html">House</a></a>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Attendance
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#"><a href="senate-attendance.html">Senate</a></a>
+                        <a class="dropdown-item" href="#"><a href="house-attendance.html">House</a></a>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Party Loyality
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#"><a href="senate-loyality.html">Senate</a></a>
+                        <a class="dropdown-item" href="#"><a href="house-loyality.html">House</a></a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <h1>Congressmen</h1>
+    <h2>
+        The major power of the House is to pass federal legislation that affects the entire country, although its
+        bills
+        must
+        also be passed by the Senate and further agreed to by the U.S. President before becoming law (unless both
+        the
+        House
+        and
+        Senate re-pass the legislation with a two-thirds majority in each chamber). The House has some exclusive
+        powers:
+        the
+        power to initiate revenue bills, to impeach officials (impeached officials are subsequently tried in the
+        Senate),
+        and to
+        elect the U.S. President in case there is no majority in the Electoral College.
+
+        Each U.S. state is represented in the House in proportion to its population as measured in the census, but
+        every
+        state
+
+        is entitled to at least one representative.</h2>
+    <br>
+    <br>
+
+
+
+    <div class="filters">
+
+
+        <h2 class="filterClasses"> Filter by Party:</h2>
+
+        <div class="filterClasses">
+            <div class="checkboxClass">
+                <input type="checkbox" id="democratsId" name="party" value="D"> Democrats<br>
+                <input type="checkbox" id="republicansId" name="party" value="R"> Republicans<br>
+                <input type="checkbox" id="independentsId" name="party" value="I"> Independents<br>
+            </div>
+        </div>
+
+
+        <div class="filterClasses"> </div>
+        <h2 class="filterClasses"> Filter by State:</h2>
+
+        <div class="filterClasses">
+            <select id="myDropdown" class="dropdown-content">
+
+                <option value="">All states</option>
+            </select>
+        </div>
+
+    </div>
+
+
+    <table class="table table-borderless" style="text-align:center;">
+        <thead class=tableFontBig>
+            <th class="th1style">Last, First, Middle Name</th>
+            <th>Party</th>
+            <th>State</th>
+            <th>Serniority</th>
+            <th>Votes With Party (%)</th>
+        </thead>
+
+        <tbody id="house-data" class=tableFont></tbody>
+    </table>
+
+
+
+
+    <div class="footer">
+        <div></div>
+        <div class="p2">©2016 TGIF | all rights reserved</div>
+        <div class="anchor">
+            <i><a class="float-right align-middle" href=" #top">Go-2-Top</a></i>
+        </div>
+    </div>
+
+    <!-- BACKGROUND STYLE IMG -->
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+
+
+    <script src="js/main-house.js"></script>
+</body>
+
+</html>
